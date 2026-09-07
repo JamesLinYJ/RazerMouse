@@ -4,14 +4,20 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 : "${SIGN_IDENTITY:?Set SIGN_IDENTITY to the SHA-1 of a Developer ID Application identity}"
 [ -z "$(git status --porcelain)" ] || { echo 'Commit source changes before creating a release.' >&2; exit 1; }
-./scripts/build.sh
-[ -z "$(git status --porcelain)" ] || { echo 'Build changed tracked files; review and commit them first.' >&2; exit 1; }
+release_root="$PWD"
 release_version=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' app/Info.plist)
 release_revision=$(git rev-parse HEAD)
 release_output="$PWD/build/release/v$release_version"
 release_stage=$(mktemp -d "${TMPDIR:-/tmp}/razermouse-release.XXXXXX")
 trap 'rm -rf "$release_stage"' EXIT
 mkdir -p "$release_output"
+# File Provider can reattach Finder metadata between xattr and codesign. Build the
+# committed source in an unmanaged temporary directory so signing is deterministic.
+release_build_source="$release_stage/build-source"
+mkdir "$release_build_source"
+git archive "$release_revision" | tar -x -C "$release_build_source"
+cd "$release_build_source"
+./scripts/build.sh
 release_app="$release_stage/RazerMouse.app"
 ditto --noextattr --norsrc --noqtn build/RazerMouse.app "$release_app"
 cp THIRD_PARTY_NOTICES.md "$release_app/Contents/Resources/"
@@ -68,7 +74,7 @@ codesign --verify --deep --strict "$release_stage/unpacked/RazerMouse.app"
 release_source_name="RazerMouse-v$release_version-source"
 release_source="$release_stage/$release_source_name"
 mkdir -p "$release_source/.cargo"
-git archive HEAD | tar -x -C "$release_source"
+git -C "$release_root" archive "$release_revision" | tar -x -C "$release_source"
 (cd "$release_source" && cargo vendor --locked --versioned-dirs vendor > .cargo/config.toml)
 COPYFILE_DISABLE=1 tar -czf "$release_output/$release_source_name.tar.gz" -C "$release_stage" "$release_source_name"
 python3 - "$release_app" "$release_stage/signature.txt" "$release_output" "$release_revision" "$release_notarized" <<'PY'
