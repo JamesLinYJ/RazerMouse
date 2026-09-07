@@ -33,6 +33,10 @@ These images render the actual SwiftUI views with **simulated device data**. The
 
 Controls only appear when the selected device advertises support. Reconnection reads the device without automatically applying presets. Synapse is detected and a conflict hint is shown; the app does not terminate it.
 
+## Downloads
+
+Certificate-signed Apple Silicon packages are published on [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases). Check each release's signature report and notarization status before installing. Source builds below use ad-hoc signing by default; see [release packaging](docs/RELEASING.md) for Developer ID signing.
+
 ## Build
 
 Requirements: an Apple Silicon Mac, macOS 14 or later, Xcode with a Swift 5.9+ toolchain and macOS SDK, Rust/Cargo, Python 3 and Git. Development validation used Rust 1.98 and a Swift 6.4 beta toolchain; other supported toolchain combinations have not all been tested.

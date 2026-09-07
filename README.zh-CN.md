@@ -33,6 +33,10 @@
 
 仅显示当前设备支持的控制。重新连接时读取硬件，不自动套用预设。检测到雷云时提示控制冲突，不自动结束进程。
 
+## 下载
+
+证书签名的 Apple Silicon 安装包发布在 [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases)。安装前请查看对应版本的签名报告和公证状态。下方源码构建默认使用 ad-hoc 签名；Developer ID 打包方法见 [发布说明](docs/RELEASING.md)。
+
 ## 构建与运行
 
 需要 Apple Silicon Mac、macOS 14 或更高版本、带 Swift 5.9+ 工具链及 macOS SDK 的 Xcode、Rust/Cargo、Python 3 和 Git。开发时验证使用 Rust 1.98 与 Swift 6.4 beta；并未覆盖所有工具链组合。
