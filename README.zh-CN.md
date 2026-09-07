@@ -35,7 +35,11 @@
 
 ## 下载
 
-证书签名的 Apple Silicon 安装包发布在 [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases)。安装前请查看对应版本的签名报告和公证状态。下方源码构建默认使用 ad-hoc 签名；Developer ID 打包方法见 [发布说明](docs/RELEASING.md)。
+从 [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases/latest) 下载 **DMG 安装包**，打开后将 RazerMouse 拖入右侧 Applications 文件夹。v0.1.0 的应用与 DMG 均已使用 Developer ID 证书签名、通过 Apple 公证并附加票据，通过 Gatekeeper 检查。支持 Apple Silicon 和 macOS 14+。
+
+<img src="docs/screenshots/installer.png" width="720" alt="RazerMouse 拖拽安装页与首次打开权限提示" />
+
+上图为实际 Finder 安装窗口。首次打开时按应用提示允许“输入监控”；使用宏输出时另需“辅助功能”权限。也提供 ZIP 格式。下方源码构建默认采用 ad-hoc 签名；发行打包方法见 [发布说明](docs/RELEASING.md)。
 
 ## 构建与运行
 

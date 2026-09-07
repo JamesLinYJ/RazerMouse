@@ -20,7 +20,7 @@ The reference checkout, oracle corpus, compiled test oracle and extraction/rewri
 
 Rust dependencies are pinned by `Cargo.lock`; their package manifests and upstream repositories provide the applicable licenses. See [third-party notices](../THIRD_PARTY_NOTICES.md). UniFFI generates `RazerBindings.swift`, `RazerFFI.h` and the module map from this project's API. Generated headers are preserved and must not be replaced with misleading authorship statements.
 
-The app is locally ad-hoc signed, not endorsed or signed by Razer. Razer and product names identify compatible hardware; the GPL does not grant rights to third-party trademarks.
+Local development builds are ad-hoc signed; release builds use the independent developer's Developer ID certificate. The app is not endorsed or signed by Razer. Razer and product names identify compatible hardware; the GPL does not grant rights to third-party trademarks.
 
 ## 中文摘要
 

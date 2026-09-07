@@ -35,7 +35,11 @@ Controls only appear when the selected device advertises support. Reconnection r
 
 ## Downloads
 
-Certificate-signed Apple Silicon packages are published on [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases). Check each release's signature report and notarization status before installing. Source builds below use ad-hoc signing by default; see [release packaging](docs/RELEASING.md) for Developer ID signing.
+Download the **DMG installer** from [GitHub Releases](https://github.com/JamesLinYJ/RazerMouse/releases/latest), open it and drag RazerMouse into Applications. The v0.1.0 app and DMG are Developer ID signed, Apple-notarized and have stapled tickets; both passed Gatekeeper assessment. Requires Apple Silicon and macOS 14+.
+
+<img src="docs/screenshots/installer.png" width="720" alt="RazerMouse DMG with drag-to-Applications installation and first-launch permission guidance" />
+
+Actual Finder installer window. On first launch, follow the app's Input Monitoring prompt; optional macro output requires Accessibility separately. A ZIP is also available. Source builds below use ad-hoc signing by default; see [release packaging](docs/RELEASING.md).
 
 ## Build
 
