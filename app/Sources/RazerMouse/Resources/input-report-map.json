@@ -1,0 +1,12 @@
+{
+  "REP4_DPI_UP": 32,
+  "REP4_DPI_DN": 33,
+  "REP4_TILT_L": 34,
+  "REP4_TILT_R": 35,
+  "REP4_PROFILE": 80,
+  "REP4_SNIPER": 81,
+  "REP4_DPI_CYCLE": 82,
+  "REP4_SCROLL": 84,
+  "BIT_TILT_L": 5,
+  "BIT_TILT_R": 6
+}

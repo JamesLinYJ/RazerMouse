@@ -1,0 +1,26 @@
+/target/
+/.venv/
+/reference/
+/build/
+/app/.build/
+.DS_Store
+
+/app/.swiftpm/
+/app/Package.resolved
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.xcuserstate
+
+# Local protocol research and reference extraction are not part of the public app.
+/scripts/regenerate.sh
+/scripts/build_oracle.py
+/scripts/extract_recipes.py
+/scripts/generate_catalog.py
+/scripts/generate_profiles.py
+/scripts/generate-input-map.py
+/scripts/measure_idle.py
+/tests/oracle-vectors.json

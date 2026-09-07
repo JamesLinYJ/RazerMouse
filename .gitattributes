@@ -1,0 +1,4 @@
+# Preserve generator output verbatim while keeping reviews focused on maintained source.
+app/Sources/RazerBindings/** linguist-generated=true -whitespace
+app/Sources/RazerFFI/** linguist-generated=true -whitespace
+crates/razer-core/src/*.json linguist-generated=true

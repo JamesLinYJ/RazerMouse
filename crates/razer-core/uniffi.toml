@@ -1,0 +1,4 @@
+[bindings.swift]
+module_name = "RazerBindings"
+ffi_module_name = "RazerFFI"
+generate_module_map = true

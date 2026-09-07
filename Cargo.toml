@@ -1,0 +1,9 @@
+[workspace]
+members = ["crates/razer-core", "tools/bindgen"]
+default-members = ["crates/razer-core"]
+resolver = "2"
+[profile.release]
+lto = true
+codegen-units = 1
+strip = "debuginfo"
+opt-level = "s"

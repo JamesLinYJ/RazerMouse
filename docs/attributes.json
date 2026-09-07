@@ -1,0 +1,440 @@
+[
+  {
+    "name": "version",
+    "read": true,
+    "write": false,
+    "excluded": true
+  },
+  {
+    "name": "firmware_version",
+    "read": true,
+    "write": false,
+    "excluded": false
+  },
+  {
+    "name": "test",
+    "read": false,
+    "write": true,
+    "excluded": true
+  },
+  {
+    "name": "poll_rate",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "dpi",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "dpi_stages",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "device_type",
+    "read": true,
+    "write": false,
+    "excluded": false
+  },
+  {
+    "name": "device_mode",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "device_serial",
+    "read": true,
+    "write": false,
+    "excluded": false
+  },
+  {
+    "name": "device_idle_time",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_mode",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_acceleration",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_smart_reel",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "tilt_hwheel",
+    "read": true,
+    "write": true,
+    "excluded": true
+  },
+  {
+    "name": "tilt_repeat",
+    "read": true,
+    "write": true,
+    "excluded": true
+  },
+  {
+    "name": "tilt_repeat_delay",
+    "read": true,
+    "write": true,
+    "excluded": true
+  },
+  {
+    "name": "charge_level",
+    "read": true,
+    "write": false,
+    "excluded": false
+  },
+  {
+    "name": "charge_status",
+    "read": true,
+    "write": false,
+    "excluded": false
+  },
+  {
+    "name": "charge_effect",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "charge_colour",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "charge_low_threshold",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_custom_frame",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_custom",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_led_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_blinking",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "scroll_matrix_effect_on",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_led_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_blinking",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "logo_matrix_effect_on",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_led_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "left_matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_led_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "right_matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_led_brightness",
+    "read": true,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_wave",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_spectrum",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_reactive",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_breath",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_static",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_none",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "backlight_matrix_effect_on",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "hyperpolling_wireless_dongle_indicator_led_mode",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "hyperpolling_wireless_dongle_pair",
+    "read": false,
+    "write": true,
+    "excluded": false
+  },
+  {
+    "name": "hyperpolling_wireless_dongle_unpair",
+    "read": false,
+    "write": true,
+    "excluded": false
+  }
+]
